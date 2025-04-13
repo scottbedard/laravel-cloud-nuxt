@@ -4,6 +4,7 @@
 /public/hot
 /public/storage
 /public/_nuxt
+/public/_temp
 /storage/*.key
 /storage/pail
 /vendor
