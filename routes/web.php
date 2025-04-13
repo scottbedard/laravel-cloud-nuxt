@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\NuxtController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('{any}', NuxtController::class)->where('any', '.*');
