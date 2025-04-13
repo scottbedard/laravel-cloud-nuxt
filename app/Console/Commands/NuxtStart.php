@@ -27,7 +27,7 @@ class NuxtStart extends Command
      */
     public function handle()
     {
-        $process = new Process(['node', base_path('nuxt/.output/server/index.mjs')]);
+        $process = new Process(['node', '--experimental-wasm-modules', base_path('nuxt/.output/server/index.mjs')]);
         $process->setTimeout(null);
         $process->start();
 
