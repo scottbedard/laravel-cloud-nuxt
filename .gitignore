@@ -3,6 +3,7 @@
 /public/build
 /public/hot
 /public/storage
+/public/_nuxt
 /storage/*.key
 /storage/pail
 /vendor

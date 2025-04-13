@@ -10,7 +10,6 @@ class NuxtController
 {
     public function __invoke(Request $request): Response
     {
-        dd('hello');
         $path = $request->path();
 
         $url = $path === '/' ? 'http://127.0.0.1:3000' : 'http://127.0.0.1:3000/'.$path;
