@@ -1,5 +1,7 @@
 <template>
   <div>
-    foo
+    <div>Foo</div>
+
+    <NuxtLink to="/">Home &rarr;</NuxtLink>
   </div>
 </template>

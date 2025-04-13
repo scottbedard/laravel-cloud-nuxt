@@ -1,5 +1,7 @@
 <template>
   <div>
-    index
+    <div>Index</div>
+
+    <NuxtLink to="/foo">Foo &rarr;</NuxtLink>
   </div>
 </template>
