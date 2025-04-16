@@ -1,17 +1,12 @@
 import { fileURLToPath } from 'node:url'
 import fs from 'node:fs'
 import path from 'node:path'
-import wasm from 'vite-plugin-wasm'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  app: {
-    // cdnURL: '/',
-  },
-
   compatibilityDate: '2024-11-01',
 
   devtools: {
@@ -37,13 +32,4 @@ export default defineNuxtConfig({
       publicDir: path.resolve(__dirname, '../public/_temp')
     }
   },
-
-  vite: {
-    build: {
-      target: 'esnext'
-    },
-    plugins: [
-      wasm()
-    ]
-  }
 })
